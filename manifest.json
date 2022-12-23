@@ -1,0 +1,21 @@
+{
+  "author": "Guo",
+  "manifest_version": 3,
+  "version": "1.0",
+  "short_name": "BTw",
+  "name": "Better Twitter",
+  "description": "No twitter Analytics pls",
+  "permissions": [
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts":[
+    {
+      "js":["contentScript.js"],
+      "matches": ["https://twitter.com/*"],
+      "run_at":"document_end"
+    }
+  ]
+
+}
